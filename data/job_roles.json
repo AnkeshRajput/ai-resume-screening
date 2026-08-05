@@ -1,0 +1,175 @@
+{
+  "Frontend Developer": {
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Git"
+    ],
+    "preferred_skills": [
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Redux",
+      "Automated Testing"
+    ],
+    "description": "Develops responsive, dynamic, and interactive web user interfaces with modern frontend frameworks."
+  },
+  "Backend Developer": {
+    "required_skills": [
+      "Python",
+      "Node.js",
+      "SQL",
+      "REST API",
+      "Git"
+    ],
+    "preferred_skills": [
+      "PostgreSQL",
+      "MongoDB",
+      "Docker",
+      "Redis",
+      "Microservices"
+    ],
+    "description": "Designs, develops, and maintains server-side architecture, databases, and core application APIs."
+  },
+  "Full-Stack Developer": {
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Python",
+      "SQL",
+      "Git"
+    ],
+    "preferred_skills": [
+      "TypeScript",
+      "Next.js",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker",
+      "GraphQL"
+    ],
+    "description": "Builds end-to-end web applications, handling both client-side UI and server-side backend databases."
+  },
+  "Python Developer": {
+    "required_skills": [
+      "Python",
+      "Django",
+      "Flask",
+      "REST API",
+      "SQL",
+      "Git"
+    ],
+    "preferred_skills": [
+      "FastAPI",
+      "PostgreSQL",
+      "Celery",
+      "Redis",
+      "Docker",
+      "PyTest"
+    ],
+    "description": "Engineers robust backend servers, scalable automation scripts, and RESTful APIs using Python ecosystems."
+  },
+  "Data Analyst": {
+    "required_skills": [
+      "Python",
+      "SQL",
+      "Pandas",
+      "NumPy",
+      "Data Visualization",
+      "Excel"
+    ],
+    "preferred_skills": [
+      "Tableau",
+      "Power BI",
+      "Matplotlib",
+      "Seaborn",
+      "Statistics",
+      "Scikit-Learn"
+    ],
+    "description": "Extracts insights from large data sets, builds interactive dashboards, and performs statistical analysis."
+  },
+  "Machine Learning Engineer": {
+    "required_skills": [
+      "Python",
+      "Machine Learning",
+      "Scikit-Learn",
+      "TensorFlow",
+      "PyTorch",
+      "Pandas",
+      "NumPy"
+    ],
+    "preferred_skills": [
+      "Deep Learning",
+      "Computer Vision",
+      "NLP",
+      "MLflow",
+      "Docker",
+      "SQL"
+    ],
+    "description": "Designs, trains, deploys, and optimizes machine learning models and predictive AI pipelines."
+  },
+  "AI/Generative AI Engineer": {
+    "required_skills": [
+      "Python",
+      "Generative AI",
+      "LLM",
+      "LangChain",
+      "Prompt Engineering",
+      "PyTorch",
+      "REST API"
+    ],
+    "preferred_skills": [
+      "LlamaIndex",
+      "Vector Databases",
+      "Pinecone",
+      "RAG",
+      "Transformers",
+      "OpenAI API",
+      "Gemini API"
+    ],
+    "description": "Builds state-of-the-art Generative AI applications, RAG systems, and customized LLM workflows."
+  },
+  "DevOps Engineer": {
+    "required_skills": [
+      "Linux",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Git",
+      "Bash"
+    ],
+    "preferred_skills": [
+      "Terraform",
+      "AWS",
+      "Ansible",
+      "Prometheus",
+      "Grafana",
+      "Python"
+    ],
+    "description": "Automates cloud infrastructure, build pipelines, continuous integration, and application monitoring."
+  },
+  "Software Engineer": {
+    "required_skills": [
+      "Python",
+      "Java",
+      "Data Structures",
+      "Algorithms",
+      "SQL",
+      "Git",
+      "Object-Oriented Programming"
+    ],
+    "preferred_skills": [
+      "C++",
+      "System Design",
+      "REST API",
+      "Docker",
+      "Unit Testing",
+      "Agile"
+    ],
+    "description": "Solves complex computational problems, engineers clean modular software architecture, and writes maintainable code."
+  }
+}

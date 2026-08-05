@@ -1,0 +1,245 @@
+/* AI Resume Screening & Job Recommendation System - Custom Stylesheet */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-gradient: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  --accent-gradient: linear-gradient(135deg, #06B6D4 0%, #3B82F6 100%);
+  --success-gradient: linear-gradient(135deg, #059669 0%, #10B981 100%);
+  --warning-gradient: linear-gradient(135deg, #D97706 0%, #F59E0B 100%);
+  --danger-gradient: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+  
+  --card-bg: #FFFFFF;
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  --hover-shadow: 0 20px 30px -10px rgba(79, 70, 229, 0.15);
+  
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+}
+
+/* Global Font & Smooth Reset */
+body, html, [class*="css"] {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Main Container Header Styling */
+.main-header-container {
+  background: var(--primary-gradient);
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 2rem;
+  box-shadow: 0 12px 30px rgba(79, 70, 229, 0.25);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.main-header-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+  color: #FFFFFF !important;
+}
+
+.main-header-subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 400;
+  color: #E0E7FF !important;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Streamlit Card Container */
+.custom-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow: var(--card-shadow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-card:hover {
+  box-shadow: var(--hover-shadow);
+  border-color: #CBD5E1;
+}
+
+.card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Metric Display Cards */
+.metric-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.metric-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--hover-shadow);
+}
+
+.metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--primary-gradient);
+}
+
+.metric-card.accent::before {
+  background: var(--accent-gradient);
+}
+
+.metric-card.success::before {
+  background: var(--success-gradient);
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.metric-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+/* Skill Tags / Chips */
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.skill-chip:hover {
+  transform: scale(1.04);
+}
+
+/* Distinct Skill Chip Colors */
+.chip-prog {
+  background-color: #EEF2FF;
+  color: #4338CA;
+  border: 1px solid #C7D2FE;
+}
+
+.chip-framework {
+  background-color: #ECFDF5;
+  color: #047857;
+  border: 1px solid #A7F3D0;
+}
+
+.chip-database {
+  background-color: #FFFBEB;
+  color: #B45309;
+  border: 1px solid #FDE68A;
+}
+
+.chip-tool {
+  background-color: #FDF2F8;
+  color: #BE185D;
+  border: 1px solid #FBCFE8;
+}
+
+.chip-tech {
+  background-color: #F0F9FF;
+  color: #0369A1;
+  border: 1px solid #BAE6FD;
+}
+
+.chip-soft {
+  background-color: #F5F3FF;
+  color: #6D28D9;
+  border: 1px solid #DDD6FE;
+}
+
+.chip-matched {
+  background-color: #D1FAE5;
+  color: #065F46;
+  border: 1px solid #34D399;
+  font-weight: 600;
+}
+
+.chip-missing-req {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FCA5A5;
+  font-weight: 600;
+}
+
+.chip-missing-pref {
+  background-color: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FCD34D;
+  font-weight: 500;
+}
+
+/* Learning Recommendation Alert Box */
+.learning-box {
+  background-color: #EFF6FF;
+  border-left: 5px solid #3B82F6;
+  padding: 1.2rem;
+  border-radius: 8px;
+  color: #1E40AF;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* Disclaimer Banner */
+.disclaimer-banner {
+  background-color: #F8FAFC;
+  border: 1px dashed #CBD5E1;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Micro Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
