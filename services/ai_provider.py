@@ -1,4 +1,7 @@
-
+"""
+AI Provider Abstraction Layer & Fallback Dispatcher.
+Supports OpenRouter as primary provider with automatic Gemini fallback support.
+"""
 
 import os
 from typing import Any, Dict, Tuple
