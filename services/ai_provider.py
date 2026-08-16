@@ -1,7 +1,4 @@
-"""
-AI Provider Abstraction Layer & Fallback Dispatcher.
-Supports OpenRouter as primary provider with automatic Gemini fallback support.
-"""
+
 
 import os
 from typing import Any, Dict, Tuple
@@ -79,3 +76,4 @@ def analyze_resume_with_ai(
         f"AI Resume Analysis failed across all available providers ({', '.join(provider_sequence)}). "
         f"Details: {combined_err_msg}"
     )
+
