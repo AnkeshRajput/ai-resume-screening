@@ -53,8 +53,8 @@ if css_content:
 def render_sidebar():
     """Render application sidebar with AI provider status and API key management."""
     st.sidebar.image(
-        "https://img.icons8.com/isometric/100/resume.png",
-        width=65,
+        "https://ph-files.imgix.net/7fadff95-5fb1-4d20-90ef-6eea53762b32.jpeg?auto=format",
+        width=100,
     )
     st.sidebar.title("⚙️ Configuration")
 
